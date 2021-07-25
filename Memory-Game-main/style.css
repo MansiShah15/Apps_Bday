@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+*{
+	margin: 0px;
+	padding-top: 0px;
+}
+body{
+	background-image: url("img/B11.jpg");
+	background-repeat: repeat;
+	height: 100vh;
+}
+
+h1{
+	font-size: 60px;
+	font-family: 'Akaya Telivigala', cursive;
+}
+
+span{
+	font-size: 30px;
+	font-family: 'Akaya Telivigala', cursive;
+}
+
+.restart{
+	display: inline-block;
+	margin: 0px 40px;
+	cursor: pointer;
+}
+
+section{
+	text-align: center;
+	margin: 20px;
+}
+
+.card{
+	width: 250px;
+	height: 350px;
+	border-radius: 15px;
+	box-shadow: 10px 10px 5px #999999;
+	margin: 20px 40px;
+	display: inline-block;
+  position: relative;
+  transition: transform 5s;
+  transform-style: preserve-3d;
+}
+
+.card:hover{
+	cursor: pointer;
+}
+
+img{
+	border-radius: 15px;
+	width: 250px;
+	height: 350px;
+	object-fit: none;
+}
+
+.back{
+	transform: rotateX(180deg);
+	display: none;
+}
+
+.front{
+	transform: rotateX(180deg);
+	display: none;
+}
+
+.fix{
+	pointer-events:none;
+}
+
+.deck{
+	margin: 30px 100px;
+}
+
+a{
+	text-decoration: none;
+	color: #2a2a2a;
+}
+
+footer{
+	padding: 20px;
+	background: #eaedea;
+	color: #515151;
+}
+
+a:hover{
+	color: #000000;
+}
+
+#popup{
+	align-items: center;
+	display: none;
+	font-size: 40px;
+	font-family: 'Akaya Telivigala', cursive;
+	position: absolute;
+	padding: 200px;
+	background: #f1f1f1;
+	top: 0;
+	margin-left: 28%;
+	border: 2px solid #cecece;
+}
+
+.play-again{
+	padding: 40px;
+	background: #cecece;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+   .card{
+       width: 200px;
+	   height: 280px;
+	   border-radius: 15px;
+       box-shadow: 10px 10px 5px #999999;
+       margin: 20px 40px;
+	   display: inline-block;
+       position: relative;
+       transition: transform 5s;
+       transform-style: preserve-3d;
+   }
+   
+   img{
+   	border-radius: 15px;
+	width: 200px;
+	height: 280px;
+	object-fit: none;
+    }
+}
